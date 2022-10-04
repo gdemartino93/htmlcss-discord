@@ -8,13 +8,16 @@ header{
     display: flex;
     flex-direction: column;
     width: 100%;
+    background-image: url("../img/jumbo.png");
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 .header-nav{
-    background-color:#404eed;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
+    margin-bottom: 80px;
 }
 .contenitore-header-nav{
   width: 900px;
@@ -22,7 +25,6 @@ header{
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-bottom: 100px;
 }
 .link>a{
     text-decoration: none;
@@ -43,11 +45,11 @@ header{
     color: white;
 }
 .header-main{
-    background-color: #404eed;
     display: flex;
     flex-flow: column;
     justify-content: center;
     align-items: center;
+;
 
 }
 .contenitore-header-main{
@@ -71,6 +73,7 @@ h1{
         font-size: 20px;
         margin-top: 40px;
         line-height: 30px;
+        width: 80%;
 }
 .sezione{
     display: flex;
