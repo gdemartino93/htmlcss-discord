@@ -72,19 +72,31 @@ h1{
 
 .sezione{
     display: flex;
-    /* debug */
-    min-height: 400px;
-
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
 }
 .foto{
     width: 60%;
     /* debug */
-    min-height: 200px;
-    border: 1px solid black;
+}
+.foto>img{
+    width: 100%;
+    height: 100%;
 }
 .testo{
     width:40%;
-    min-height: 200px;
+    font-size: 20px;
+    text-align: center;
+    /* debug */
+}
+.testo>h2{
+    font-size: 40px;
+    font-weight: 900;
+}
+.testo>p{
+    font-size: 20px;
+    margin: 20px 0;
 }
 .download{
     min-height: 200px;
