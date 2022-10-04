@@ -128,7 +128,7 @@ h1{
     margin-top: 50px;
 }
 footer{
-    background-color: black;
+    background-color: #23272a;
 }
 .footer-nav{
     display: flex;
@@ -174,17 +174,18 @@ footer{
     color: #5765f2;
     flex-wrap: wrap;
 }
-.linguamenu{
+.dropdown{
     margin: 10px 0;
     text-align: center;
     color: white;
 }
-.linguamenu>img{
+.dropdown>img{
     width: 20px;
     height: 20px;
 }
 .loghi{
     text-align: center;
+    order: 2;
 
 }
 .loghi i{
@@ -261,7 +262,9 @@ footer{
     margin-top: 50px;
     margin-bottom: 100px;
     }
-
+.bottone>i{
+    margin-right: 5px;
+}
 
     /* waves colori */
 .red {
@@ -270,3 +273,33 @@ footer{
 .white {
     filter: invert(99%) sepia(0%) saturate(7500%) hue-rotate(238deg) brightness(101%) contrast(102%);
 }
+
+/* menu lingua */
+.dropdown {
+    position: relative;
+    display: inline-block;
+    color: white;
+    order: 3;
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    padding: 12px 16px;
+    z-index: 1;
+  }
+  
+  .dropdown:hover .dropdown-content {
+    display: block;
+    color: black;
+  }
+  .dropdown-content img{
+    width: 20px;
+    height: 20px;
+  }
+  .dropdown-content:hover{
+    background-color: grey;
+  }
+  /* menu lingua */
