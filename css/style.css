@@ -14,9 +14,7 @@ header{
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
-    /* debug */
-    min-height: 50px;
-    border: 2px solid black;
+ 
 }
 .contenitore-header-nav{
   width: 900px;
@@ -24,6 +22,7 @@ header{
   display: flex;
   justify-content: space-between;
   align-items: center;
+  margin-bottom: 100px;
   /*debug */
 }
 
@@ -49,13 +48,15 @@ header{
 
 }
 .contenitore-header-main{
-  width: 700px;
+    /* se imposto widhth in px lascia spazio bianco a dx quando ridimensioni la schermata */
+  width: 70%;
   color: white;
   display: flex;
   align-items: center;
   justify-content: center;
   flex-wrap: wrap;
   text-align: center;
+  margin-bottom: 100px;
 }
 h1{
     font-size: 50px;
@@ -159,7 +160,7 @@ footer{
     cursor: pointer;
     margin: 10px;
     margin-top: 50px;
-    margin-bottom: 100px;
+    
 }
 .bottone:hover {
     color: #5865f2;
