@@ -7,7 +7,6 @@
 header{
     display: flex;
     flex-direction: column;
-    width: 100%;
     background-image: url("../img/jumbo.png");
     background-repeat: no-repeat;
     background-size: cover;
@@ -49,8 +48,6 @@ header{
     flex-flow: column;
     justify-content: center;
     align-items: center;
-;
-
 }
 .contenitore-header-main{
     /* se imposto widhth in px lascia spazio bianco a dx quando ridimensioni la schermata */
@@ -62,6 +59,7 @@ header{
   flex-wrap: wrap;
   text-align: center;
   margin-bottom: 100px;
+  max-width: 1000px;
 }
 h1{
     font-size: 50px;
@@ -102,9 +100,7 @@ h1{
     font-size: 20px;
     margin: 20px 0;
 }
-.download{
-    min-height: 200px;
-}
+
 .grigia{
     background-color: #f6f6f6;
     flex-flow: row-reverse;
@@ -117,7 +113,6 @@ h1{
     text-align: center;
     justify-content: center;
     /* debug */
-    min-height: 600px;
 }
 .contenitore-sezionegrande{
     display: flex;
@@ -132,39 +127,27 @@ h1{
 }
 footer{
     background-color: black;
-    /* debug */
-    min-height: 800px;
 }
 .footer-nav{
     display: flex;
     justify-content: center;
     justify-content: space-around;
-    border-bottom: 1px solid red;
-    margin: auto 200px;
-    /* debug */
-    min-height: 600px;
-
 }
 .footer-row{
     align-items: baseline;
     display: flex;
     flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    /* debug */
-    background-color: red;
-    border: 1px solid black;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding-top: 100px;
 }
 .nomesezionefooter{
-    font-size: 20px;
-    color: #2d42c5;
-    margin-bottom: 8px;
+    margin-bottom: 10px;
 }
 .footer-row>a{
     text-decoration: none;
     color: white;
-    margin-bottom: 8px;
-    
+    margin: 10px 0;   
 }
 
 .footer-infobox{
@@ -172,17 +155,18 @@ footer{
     align-items: center;
     display: flex;
     flex-direction: column;
-    /* debug */
 }
 .footer-row>span{
     /* background-color: beige; */
     text-align: center;
-    font-size: 30px;
+    font-size: 20px;
     color: #5765f2;
     flex-wrap: wrap;
-}               
+} 
+.footer-row>a:hover{
+    text-decoration: underline;
+}              
 .footer-infobox>span{
-    /* background-color: beige; */
     text-align: center;
     font-size: 30px;
     color: #5765f2;
@@ -192,9 +176,6 @@ footer{
     margin: 10px 0;
     text-align: center;
     color: white;
-    /* debug */
-    width: 100%;
-    -color: aqua;
 }
 .linguamenu>img{
     width: 20px;
@@ -211,16 +192,16 @@ footer{
     margin: 5px;
 }
 
-
-
-
-
-
-
-
-
-
-
+.footerbar{
+    width: 60%;
+    height: 100px;
+    margin: 0 20%;
+    border-top: 1px solid #5765f2;
+    margin-top: 50px;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+}
 /* tasti */
 .bottone{
     text-align: center;
@@ -277,9 +258,4 @@ footer{
     margin: 10px;
     margin-top: 50px;
     margin-bottom: 100px;
-    }
-    .bottone.apri{
-        border-radius: 40px;
-        padding: 7px 16px;
-        font-size: 14px;
     }
