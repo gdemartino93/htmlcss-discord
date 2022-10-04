@@ -137,10 +137,10 @@ footer{
 }
 .footer-nav{
     display: flex;
-    flex-direction: row;
     justify-content: center;
     justify-content: space-around;
     border-bottom: 1px solid red;
+    margin: auto 200px;
     /* debug */
     min-height: 600px;
 
@@ -153,12 +153,53 @@ footer{
     border: 1px solid black;
 }
 .footer-infobox{
-    align-items: baseline;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
     /* debug */
-    width: 25%;
-    background-color: red;
-    border: 1px solid black;
 }
+
+.footer-infobox>span{
+    /* background-color: beige; */
+    text-align: center;
+    font-size: 20px;
+    color: #5765f2;
+    flex-wrap: wrap;
+}
+.linguamenu{
+    margin: 10px 0;
+    text-align: center;
+    color: white;
+    /* debug */
+    width: 100%;
+    -color: aqua;
+}
+.linguamenu>img{
+    width: 20px;
+    height: 20px;
+}
+.loghi{
+    text-align: center;
+
+}
+.loghi i{
+    text-decoration: none;
+    font-size: 20px;
+    color: white;
+    margin: 5px;
+}
+
+
+
+
+
+
+
+
+
+
+
 
 /* tasti */
 .bottone{
