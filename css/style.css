@@ -79,6 +79,7 @@ h1{
     align-items: center;
     flex-wrap: wrap;
     margin: 50px 0;
+    position: relative;
 }
 .foto{
     max-width: 800px;
@@ -112,6 +113,7 @@ h1{
     align-items: center;
     text-align: center;
     justify-content: center;
+    position: relative;
     /* debug */
 }
 .contenitore-sezionegrande{
@@ -259,3 +261,11 @@ footer{
     margin-top: 50px;
     margin-bottom: 100px;
     }
+
+
+    /* cambio colore img svg in grigio */
+    .red {
+        filter: invert(12%) sepia(63%) saturate(6234%) hue-rotate(246deg) brightness(1%) contrast(1%);
+    }
+
+  
