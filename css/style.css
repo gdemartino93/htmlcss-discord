@@ -31,7 +31,6 @@ header{
     text-decoration: none;
     color: white;
     padding: 10px;
-    /* margin: 10px; */
 }
 .logo{
     color: white;
@@ -43,13 +42,33 @@ header{
 }
 .header-main{
     background-color: #404eed;
-    /* debug */
-    min-height: 500px;
-}
-main{
     display: flex;
-    flex-direction: column;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+
 }
+.contenitore-header-main{
+  width: 700px;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  text-align: center;
+}
+h1{
+    font-size: 50px;
+    text-align: center;
+    font-weight: 900;
+    font-family: 'Anton', sans-serif;
+}
+.contenitore-header-main>p{
+        font-size: 20px;
+        margin-top: 40px;
+        line-height: 30px;
+}
+
 .sezione{
     display: flex;
     /* debug */
@@ -129,6 +148,19 @@ footer{
     border: 1px solid #404eed;
     cursor: pointer;
 }
+.contenitore-header-main>.bottone{
+    text-align: center;
+    white-space: nowrap;
+    text-decoration: none;
+    font-size: 20px;
+    border-radius: 28px;
+    padding: 16px 32px;
+    border: 1px solid #404eed;
+    cursor: pointer;
+    margin: 10px;
+    margin-top: 50px;
+    margin-bottom: 100px;
+}
 .bottone:hover {
     color: #5865f2;
     border-color: #404eed;
@@ -138,4 +170,8 @@ footer{
     border-radius: 40px;
     padding: 7px 16px;
     font-size: 14px;
+}
+.black{
+    background-color:#23272a;
+    color: white;
 }
