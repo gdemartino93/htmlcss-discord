@@ -78,17 +78,22 @@ h1{
 }
 .foto{
     width: 60%;
+    max-width: 800px;
+    background-color: red;
     /* debug */
 }
 .foto>img{
     width: 100%;
     height: 100%;
+    margin: 20px auto;
 }
 .testo{
     width:40%;
+    max-width: 400px;
     font-size: 20px;
     text-align: center;
     /* debug */
+    background-color: pink;
 }
 .testo>h2{
     font-size: 40px;
